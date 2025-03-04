@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waleed Hayat - The State University of New York at Albany</title>
+    <link rel="stylesheet" href="index.css"> <!-- Updated file path -->
+</head>
+<body>
+    <header>
+        <h1>Form Example</h1>
+    </header>
+
+    <!-- Navigation Menu dynamically loaded -->
+    <div id="navbar"></div>
+
+    <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+        <fieldset>
+            <legend>User Information</legend>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Interests</legend>
+            <div class="checkbox-group">
+                <label>
+                    <input type="checkbox" name="interest" value="sports"> Sports
+                </label>
+                <label>
+                    <input type="checkbox" name="interest" value="music"> Music
+                </label>
+                <label>
+                    <input type="checkbox" name="interest" value="travel"> Travel
+                </label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Competitive Sleeping</legend>
+            <label for="sleep-slider">Rate your competitive sleeping:</label>
+            <input type="range" id="sleep-slider" name="sleep" min="1" max="10">
+        </fieldset>
+
+        <fieldset>
+            <legend>Class Standing</legend>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="class" value="freshman" required> Freshman
+                </label>
+                <label>
+                    <input type="radio" name="class" value="sophomore"> Sophomore
+                </label>
+                <label>
+                    <input type="radio" name="class" value="junior"> Junior
+                </label>
+                <label>
+                    <input type="radio" name="class" value="senior"> Senior
+                </label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Graduation Year</legend>
+            <label for="graduation-year">Select your graduation year:</label>
+            <select id="graduation-year" name="graduation-year" required>
+                <option value="" disabled selected>Select a year</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+            </select>
+        </fieldset>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Include navbar.js script -->
+    <script src="navbar.js"></script> <!-- Updated file path -->
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Waleed Hayat</title>
+    <link rel="stylesheet" href="index.css"> <!-- Link to external CSS -->
+    <style>
+        /* Inline CSS for images */
+        .school-images {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 20px 0;
+        }
+
+        .school-images img {
+            width: 150px; /* Adjust the size of images */
+            height: 150px; /* Maintain square aspect ratio */
+            object-fit: cover; /* Ensures image content fits within the box */
+            border-radius: 8px; /* Optional: rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds subtle shadow for visual appeal */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <div id="navbar"></div>
+
+    <header>
+        <h1>Waleed Hayat</h1>
+        <h2>The New York University Tandon School of Engineering (2024-2025)</h2>
+        <h3>Master of Science in Cybersecurity</h3>
+        <h2>University at Albany, SUNY (2020-2024)</h2>
+        <h3>Bachelor of Science in Information Technology and Cybersecurity</h3>
+        <h3>Minor: Computer Science</h3>
+    </header>
+
+    <h3>Education</h3>
+    <ol>
+        <li><strong>New York University Tandon School of Engineering</strong> <em>2024 - 2025</em>
+            <ul>
+                <li>Master of Science in Cybersecurity</li>
+            </ul>
+        </li>
+        <li><strong>University at Albany, SUNY</strong> <em>August 2020 - December 2024</em>
+            <ul>
+                <li>Bachelor of Science in Information Technology and Cybersecurity</li>
+                <li>Minor: Computer Science</li>
+            </ul>
+        </li>
+    </ol>
+
+    <!-- School Images Section -->
+    <div class="school-images">
+        <img src="UAlbany.jpeg" alt="University at Albany">
+        <img src="NYU.png" alt="New York University">
+        <img src="UA.jpg" alt="University at Albany">
+        <img src="nyu2.jpg" alt="New York University">
+    </div>
+
+    <h3>Courses by Subject Area</h3>
+    <ul>
+        <li>Cybersecurity
+            <ul>
+                <li>Offensive Security</li>
+                <li>Network Security</li>
+                <li>Threat Detection and Response</li>
+            </ul>
+        </li>
+        <li>Computer Science
+            <ul>
+                <li>Introduction to Python</li>
+                <li>Data Structures</li>
+                <li>Algorithms</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Employment History</h3>
+    <ol>
+        <li><strong>New York eHealth Collaborative (NYeC)</strong> <em>June 2023 - August 2023</em></li>
+        <li><strong>UAlbany Cyber Defense Organization</strong> <em>September 2022 - Present</em></li>
+    </ol>
+
+    <h3>Skills</h3>
+    <table>
+        <caption>Technical Skills</caption>
+        <thead>
+            <tr>
+                <th>Cybersecurity</th>
+                <th>Programming</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Metasploit, Nmap, Wireshark</td>
+                <td>Python, Node.js, React</td>
+            </tr>
+            <tr>
+                <th>Platforms</th>
+                <th>Tools</th>
+            </tr>
+            <tr>
+                <td>Linux, Windows, AWS</td>
+                <td>Jira, Git, Docker</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Additional skills available upon request</td>
+            </tr>
+            <tr>
+                <td colspan="2">References available upon request</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <footer>
+        &copy; Waleed Hayat 2024
+    </footer>
+
+    <!-- Include navbar.js script -->
+    <script src="navbar.js"></script>
+
+</body>
+</html>

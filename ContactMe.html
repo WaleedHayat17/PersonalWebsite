@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="index.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Contact Me</h1>
+    </header>
+
+    <!-- Navigation Menu -->
+    <div id="navbar"></div>
+
+    <main>
+        <form action="https://formsubmit.co/0d7a0e1573e4bd157fac3e2f65bc3f9f" method="POST">
+            <!-- Prevent bot spam -->
+            <input type="hidden" name="_captcha" value="false">
+
+            <!-- Subject line for the email -->
+            <input type="hidden" name="_subject" value="New submission from Contact Me form">
+
+            <!-- Redirect to a thank-you page after submission -->
+            <input type="hidden" name="_next" value="https://waleedhayat.com/ContactMe/">
+
+            <p>
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="first_name" required placeholder="John">
+            </p>
+            <p>
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="last_name" required placeholder="Doe">
+            </p>
+            <p>
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required placeholder="example@example.com">
+            </p>
+            <p>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Type your message here..."></textarea>
+            </p>
+            <p>
+                <button type="submit">Submit</button>
+            </p>
+        </form>
+    </main>
+
+    <!-- Include navbar.js script -->
+    <script src="navbar.js"></script>
+</body>
+</html>
